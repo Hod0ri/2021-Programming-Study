@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Page"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#0E5ACD"
+        />
+
+    <Button
+        android:id="@+id/btn_goCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:backgroundTint="#AB51BF"
+        />
+
+    <Button
+        android:id="@+id/btn_MiniGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MiniGame"
+        android:backgroundTint="#2A8017"
+        />
+
+
+</LinearLayout>

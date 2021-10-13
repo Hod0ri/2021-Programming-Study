@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WTest3Activity">
+
+
+    <ImageView
+        android:id="@+id/img_scissor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/s" />
+
+    <ImageView
+        android:id="@+id/img_rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/r" />
+
+    <ImageView
+        android:id="@+id/img_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/p" />
+
+    <CheckBox
+        android:id="@+id/chk_scissor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scissor" />
+
+    <CheckBox
+        android:id="@+id/chk_rock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rock" />
+
+    <CheckBox
+        android:id="@+id/chk_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paper" />
+</LinearLayout>

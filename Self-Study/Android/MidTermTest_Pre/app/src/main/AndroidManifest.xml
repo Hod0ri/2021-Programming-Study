@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidTermTest_Pre">
         <activity
+            android:name=".MiniActivity"
+            android:exported="false" />
+        <activity
             android:name=".CalcuActivity"
             android:exported="false" />
         <activity

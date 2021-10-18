@@ -32,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
         btn_MiniGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(getApplicationContext(),"Move to Mini Photo", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MiniActivity.class);
+                startActivity(intent);
             }
         });
     }

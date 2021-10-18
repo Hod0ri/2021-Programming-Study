@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MiniActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rd_kain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="맛있는 겨울배" />
+
+        <RadioButton
+            android:id="@+id/rd_iu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="국힙원탑" />
+
+        <RadioButton
+            android:id="@+id/rd_mte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유링게슝" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_iu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/iu" />
+
+        <ImageView
+            android:id="@+id/img_mte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/mte" />
+
+        <ImageView
+            android:id="@+id/img_kain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/kain" />
+    </FrameLayout>
+
+</LinearLayout>

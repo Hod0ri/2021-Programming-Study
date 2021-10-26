@@ -22,7 +22,7 @@ namespace ParkingAdmin
         }
         public void SetOutTime()
         {
-            this.inTime = DateTime.Now;
+            this.outTime = DateTime.Now;
         }
         public DateTime GetInTime()
         {

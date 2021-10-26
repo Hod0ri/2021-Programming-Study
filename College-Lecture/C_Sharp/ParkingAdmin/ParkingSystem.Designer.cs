@@ -30,7 +30,7 @@ namespace ParkingAdmin
         private void InitializeComponent()
         {
             this.btnCarIn_Click = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCarOut_Click = new System.Windows.Forms.Button();
             this.cboCarLList = new System.Windows.Forms.ComboBox();
             this.listBoxState = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -45,14 +45,15 @@ namespace ParkingAdmin
             this.btnCarIn_Click.UseVisualStyleBackColor = true;
             this.btnCarIn_Click.Click += new System.EventHandler(this.btnCarIn_Click_Click);
             // 
-            // button2
+            // btnCarOut_Click
             // 
-            this.button2.Location = new System.Drawing.Point(362, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "출차";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCarOut_Click.Location = new System.Drawing.Point(362, 12);
+            this.btnCarOut_Click.Name = "btnCarOut_Click";
+            this.btnCarOut_Click.Size = new System.Drawing.Size(75, 23);
+            this.btnCarOut_Click.TabIndex = 1;
+            this.btnCarOut_Click.Text = "출차";
+            this.btnCarOut_Click.UseVisualStyleBackColor = true;
+            this.btnCarOut_Click.Click += new System.EventHandler(this.btnCarOut_Click_Click);
             // 
             // cboCarLList
             // 
@@ -68,17 +69,17 @@ namespace ParkingAdmin
             this.listBoxState.ItemHeight = 15;
             this.listBoxState.Location = new System.Drawing.Point(12, 61);
             this.listBoxState.Name = "listBoxState";
-            this.listBoxState.Size = new System.Drawing.Size(425, 349);
+            this.listBoxState.Size = new System.Drawing.Size(626, 349);
             this.listBoxState.TabIndex = 3;
             // 
             // ParkingSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 450);
+            this.ClientSize = new System.Drawing.Size(666, 450);
             this.Controls.Add(this.listBoxState);
             this.Controls.Add(this.cboCarLList);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCarOut_Click);
             this.Controls.Add(this.btnCarIn_Click);
             this.Name = "ParkingSystem";
             this.Text = "Form1";
@@ -89,7 +90,7 @@ namespace ParkingAdmin
         #endregion
 
         private System.Windows.Forms.Button btnCarIn_Click;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCarOut_Click;
         private System.Windows.Forms.ComboBox cboCarLList;
         private System.Windows.Forms.ListBox listBoxState;
     }

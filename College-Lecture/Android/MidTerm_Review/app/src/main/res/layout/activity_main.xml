@@ -15,4 +15,12 @@
         android:text="Test1"
         android:backgroundTint="#2196F3"
         />
+
+    <Button
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test2"
+        android:backgroundTint="#4CAF50"
+        />
 </LinearLayout>

@@ -57,5 +57,46 @@ public class Test1Activity extends AppCompatActivity {
                 edt_chkpasswd.setText("");
             }
         });
+
+        btn_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if((edt_passwd.getText().toString()).equals(edt_chkpasswd.getText().toString())) {
+                    lb_passwd.setText(edt_passwd.getText().toString());
+                } else {
+                    lb_passwd.setText("비밀번호가 일치하지 않습니다!");
+                }
+                if(rd_male.isChecked() || rd_female.isChecked()) {
+                    if (rd_male.isChecked()) {
+                        lb_gender.setText("남");
+                    }
+                    if (rd_female.isChecked()) {
+                        lb_gender.setText("여");
+                    }
+                } else {
+                    lb_gender.setText("성별을 입력해주세요!");
+                }
+
+                String birth = edt_birth.getText().toString();
+                if(birth.length() == 8) {
+                    String year = birth.substring(0, 4);
+                    String month = birth.substring(4, 6);
+                    String day = birth.substring(6, 8);
+
+                    lb_year.setText(year);
+                    lb_month.setText(month);
+                    lb_day.setText(day);
+
+                    if(chk_calcAge.isChecked()) {
+                        String age = (2021 - Integer.parseInt(year)) + "";
+                        lb_age.setText(age);
+                    }
+                } else {
+                    lb_year.setText("Error");
+                    lb_month.setText("Error");
+                    lb_day.setText("Error");
+                }
+            }
+        });
     }
 }

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="생년월일 : " />
+
+        <EditText
+            android:id="@+id/edt_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Birth"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="비밀번호 : " />
+
+        <EditText
+            android:id="@+id/edt_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Password"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="비밀번호 확인 : " />
+
+        <EditText
+            android:id="@+id/edt_chkpasswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Password Again"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rd_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="남성" />
+
+            <RadioButton
+                android:id="@+id/rd_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="여성" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            />
+        <Button
+            android:id="@+id/btn_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생년월일 : "
+            />
+        <TextView
+            android:id="@+id/lb_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="년"
+            />
+        <TextView
+            android:id="@+id/lb_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월"
+            />
+        <TextView
+            android:id="@+id/lb_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 : "
+            />
+        <TextView
+            android:id="@+id/lb_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별 : "
+            />
+        <TextView
+            android:id="@+id/lb_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/chk_calcAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이 계산"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이 : "
+            />
+        <TextView
+            android:id="@+id/lb_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    "
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

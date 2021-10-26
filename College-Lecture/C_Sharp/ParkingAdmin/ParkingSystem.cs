@@ -26,6 +26,14 @@ namespace ParkingAdmin
 
         private void btnCarIn_Click_Click(object sender, EventArgs e)
         {
+            foreach (var car in cars)
+            {
+                if (car.CarNumber.Contains(cboCarLList.Text))
+                {
+                    MessageBox.Show(car.CarNumber.ToString() + "는 이미 입고 되어 있습니다.");
+                    return;
+                }
+            }
             car = new Car();
             car.Seq = ++seq;
             car.CarNumber = cboCarLList.Text;

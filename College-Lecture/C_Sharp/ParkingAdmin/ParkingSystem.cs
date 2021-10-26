@@ -52,10 +52,13 @@ namespace ParkingAdmin
             listBoxState.Items.Add(sb.ToString());
 
             Console.WriteLine("현재 차량 대수 : " + cars.Count);
+            int n = cboCarLList.Items.Count;
+            lb_carC.Text = n.ToString();
         }
 
         private void btnCarOut_Click_Click(object sender, EventArgs e)
         {
+            int price = 0;
             foreach (var car in cars)
             {
                 if (car.CarNumber.Contains(cboCarLList.Text))
@@ -71,7 +74,9 @@ namespace ParkingAdmin
                     listBoxState.Items.Add(sb.ToString());
                     cars.Remove(car);
 
-                    MessageBox.Show("출차\n입고 시간 : " + car.GetInTime().ToString() + "\n출고 시간 : " + car.GetOutTime().ToString());
+                    price = Price(car.GetInTime(), car.GetOutTime());
+
+                    MessageBox.Show("출차\n입고 시간 : " + car.GetInTime().ToString() + "\n출고 시간 : " + car.GetOutTime().ToString() + "\n주차비 : " + price);
 
                     break;
                 }
@@ -80,7 +85,24 @@ namespace ParkingAdmin
             cboCarLList.Items.Clear();
             cboCarLList.Items.AddRange(carNumberList.ToArray());
             Console.WriteLine("현재 차량 대수: " + cars.Count);
+            int n = cboCarLList.Items.Count;
+            lb_carC.Text = n.ToString();
 
+            int Price(DateTime inTime, DateTime outTime)
+            {
+                int result = 0;
+
+                double oATimeIntervalValue = outTime.ToOADate() - inTime.ToOADate();
+                DateTime TimeIntervalValue = DateTime.FromOADate(oATimeIntervalValue);
+                int days = TimeIntervalValue.Day;
+                int hours = TimeIntervalValue.Hour;
+                int mins = TimeIntervalValue.Minute;
+                int secons = TimeIntervalValue.Second;
+
+                result = (hours * 3600) + (mins * 600) + (secons * 10);
+
+                return result;
+            }
         }
     }
 }

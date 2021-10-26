@@ -33,6 +33,8 @@ namespace ParkingAdmin
             this.btnCarOut_Click = new System.Windows.Forms.Button();
             this.cboCarLList = new System.Windows.Forms.ComboBox();
             this.listBoxState = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_carC = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCarIn_Click
@@ -75,11 +77,30 @@ namespace ParkingAdmin
             this.listBoxState.Size = new System.Drawing.Size(626, 349);
             this.listBoxState.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 423);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "현재 차량 재고";
+            // 
+            // lb_carC
+            // 
+            this.lb_carC.AutoSize = true;
+            this.lb_carC.Location = new System.Drawing.Point(121, 423);
+            this.lb_carC.Name = "lb_carC";
+            this.lb_carC.Size = new System.Drawing.Size(0, 15);
+            this.lb_carC.TabIndex = 5;
+            // 
             // ParkingSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 450);
+            this.Controls.Add(this.lb_carC);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxState);
             this.Controls.Add(this.cboCarLList);
             this.Controls.Add(this.btnCarOut_Click);
@@ -87,6 +108,7 @@ namespace ParkingAdmin
             this.Name = "ParkingSystem";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +118,8 @@ namespace ParkingAdmin
         private System.Windows.Forms.Button btnCarOut_Click;
         private System.Windows.Forms.ComboBox cboCarLList;
         private System.Windows.Forms.ListBox listBoxState;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_carC;
     }
 }
 

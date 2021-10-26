@@ -29,20 +29,21 @@ namespace ParkingAdmin
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCarIn_Click = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cboCarLList = new System.Windows.Forms.ComboBox();
+            this.listBoxState = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCarIn_Click
             // 
-            this.button1.Location = new System.Drawing.Point(269, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "입차";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCarIn_Click.Location = new System.Drawing.Point(269, 12);
+            this.btnCarIn_Click.Name = "btnCarIn_Click";
+            this.btnCarIn_Click.Size = new System.Drawing.Size(75, 23);
+            this.btnCarIn_Click.TabIndex = 0;
+            this.btnCarIn_Click.Text = "입차";
+            this.btnCarIn_Click.UseVisualStyleBackColor = true;
+            this.btnCarIn_Click.Click += new System.EventHandler(this.btnCarIn_Click_Click);
             // 
             // button2
             // 
@@ -53,44 +54,44 @@ namespace ParkingAdmin
             this.button2.Text = "출차";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboCarLList
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(251, 23);
-            this.comboBox1.TabIndex = 2;
+            this.cboCarLList.FormattingEnabled = true;
+            this.cboCarLList.Location = new System.Drawing.Point(12, 13);
+            this.cboCarLList.Name = "cboCarLList";
+            this.cboCarLList.Size = new System.Drawing.Size(251, 23);
+            this.cboCarLList.TabIndex = 2;
             // 
-            // textBox1
+            // listBoxState
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 59);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 364);
-            this.textBox1.TabIndex = 3;
+            this.listBoxState.FormattingEnabled = true;
+            this.listBoxState.ItemHeight = 15;
+            this.listBoxState.Location = new System.Drawing.Point(12, 61);
+            this.listBoxState.Name = "listBoxState";
+            this.listBoxState.Size = new System.Drawing.Size(425, 349);
+            this.listBoxState.TabIndex = 3;
             // 
             // ParkingSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listBoxState);
+            this.Controls.Add(this.cboCarLList);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCarIn_Click);
             this.Name = "ParkingSystem";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCarIn_Click;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cboCarLList;
+        private System.Windows.Forms.ListBox listBoxState;
     }
 }
 

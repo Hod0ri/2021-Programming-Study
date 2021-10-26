@@ -18,6 +18,8 @@ public class Member {
     @Column(name = "member_id")
     private String id; //id와 db의 member_id와 동일
 
+    private String name;
+
     private String email;
 
     private String phone;

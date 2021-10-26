@@ -3,6 +3,7 @@ package com.example.midterm_review;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -38,5 +39,23 @@ public class Test1Activity extends AppCompatActivity {
         lb_month = findViewById(R.id.lb_month);
         lb_day = findViewById(R.id.lb_day);
         lb_passwd = findViewById(R.id.lb_passwd);
+
+        btn_init.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lb_age.setText("    ");
+                lb_gender.setText("    ");
+                lb_year.setText("    ");
+                lb_month.setText("    ");
+                lb_day.setText("    ");
+                lb_passwd.setText("    ");
+                chk_calcAge.setChecked(false);
+                rd_female.setChecked(false);
+                rd_male.setChecked(false);
+                edt_birth.setText("");
+                edt_passwd.setText("");
+                edt_chkpasswd.setText("");
+            }
+        });
     }
 }

@@ -62,6 +62,9 @@ namespace ParkingAdmin
                     sb.Append(car.GetOutTime());
                     listBoxState.Items.Add(sb.ToString());
                     cars.Remove(car);
+
+                    MessageBox.Show("출차\n입고 시간 : " + car.GetInTime().ToString() + "\n출고 시간 : " + car.GetOutTime().ToString());
+
                     break;
                 }
             }
@@ -69,6 +72,7 @@ namespace ParkingAdmin
             cboCarLList.Items.Clear();
             cboCarLList.Items.AddRange(carNumberList.ToArray());
             Console.WriteLine("현재 차량 대수: " + cars.Count);
+
         }
     }
 }

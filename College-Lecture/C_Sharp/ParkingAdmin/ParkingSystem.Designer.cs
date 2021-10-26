@@ -65,6 +65,9 @@ namespace ParkingAdmin
             // 
             // listBoxState
             // 
+            this.listBoxState.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxState.FormattingEnabled = true;
             this.listBoxState.ItemHeight = 15;
             this.listBoxState.Location = new System.Drawing.Point(12, 61);

@@ -22,7 +22,7 @@
             android:id="@+id/edt_birth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input Birth"
+            android:hint="Input Birth (ex)19991004)"
             />
 
     </LinearLayout>

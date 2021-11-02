@@ -1,6 +1,5 @@
 package edu.dl.project01.domain;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,20 +14,15 @@ import java.util.List;
 @Getter @Setter
 public class Member {
     @Id
-    @Column(name = "member_id")
-    private String id; //id와 db의 member_id와 동일
+    @Column(name="member_id")
+    private String id;
 
     private String name;
-
     private String email;
-
     private String phone;
-
     private String address;
+    private Long zipcode;
 
-    private String zipcode;
-
-    @OneToMany(mappedBy = "member") //order에 있는 member에 의해 매핑되었음.
+    @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
-
 }

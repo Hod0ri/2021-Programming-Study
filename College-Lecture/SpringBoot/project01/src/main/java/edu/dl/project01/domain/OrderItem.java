@@ -9,12 +9,12 @@ import javax.persistence.*;
 @Entity
 @Getter @Setter
 public class OrderItem {
-    @Id @GeneratedValue
-    @Column(name = "order_item_id")
+    @Id
+    @GeneratedValue
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "item_id")
+    @JoinColumn(name="item_id")
     private Item item;
 
     @ManyToOne

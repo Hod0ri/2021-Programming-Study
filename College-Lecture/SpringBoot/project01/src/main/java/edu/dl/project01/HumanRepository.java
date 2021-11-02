@@ -1,6 +1,7 @@
 package edu.dl.project01;
 
 import org.springframework.stereotype.Repository;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -14,8 +15,7 @@ public class HumanRepository {
         return human.getId();
     }
 
-    public  Human find(Long id){
+    public Human find(Long id){
         return em.find(Human.class, id);
     }
-
 }

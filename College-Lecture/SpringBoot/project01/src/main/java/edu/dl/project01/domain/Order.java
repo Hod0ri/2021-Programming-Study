@@ -1,6 +1,5 @@
 package edu.dl.project01.domain;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "ordering")
 @Getter @Setter
 public class Order {
     @Id @GeneratedValue
@@ -17,7 +17,7 @@ public class Order {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "member_id")
+    @JoinColumn(name="member_id")
     private Member member;
 
     @OneToMany(mappedBy = "order")

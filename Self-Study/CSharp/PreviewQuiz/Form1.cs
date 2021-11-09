@@ -54,7 +54,9 @@ namespace PreviewQuiz
 
         private void btn_Pro2_Click(object sender, EventArgs e)
         {
-            
+            StringCompute strCompute = new StringCompute();
+            String result = strCompute.Compute(textBox2.Text);
+            textBox3.Text = result;
         }
 
         private void btn_Pro3_Click(object sender, EventArgs e)

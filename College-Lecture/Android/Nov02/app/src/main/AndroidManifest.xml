@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nov02">
         <activity
+            android:name=".ReceiveTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntentTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".DrawActivity"
             android:exported="false" />
         <activity

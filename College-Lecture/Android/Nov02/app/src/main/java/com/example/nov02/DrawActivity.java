@@ -22,31 +22,31 @@ class MyView extends View {
         // setBackgroundColor(Color.YELLOW);
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-
-        int action = event.getActionMasked();
-
-        switch (action) {
-            case MotionEvent.ACTION_DOWN:
-                nPosX = (int) event.getX(0);
-                nPosY = (int) event.getY(0);
-                nPosX2 = (int) event.getX(1);
-                nPosY2 = (int) event.getY(1);
-                break;
-            case MotionEvent.ACTION_MOVE:
-                break;
-            case MotionEvent.ACTION_UP:
-                nPosX3 = (int) event.getX(0);
-                nPosY3 = (int) event.getY(0);
-                nPosX4 = (int) event.getX(1);
-                nPosY4 = (int) event.getY(1);
-                break;
-        }
-
-        invalidate();
-        return super.onTouchEvent(event);
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//
+//        int action = event.getActionMasked();
+//
+//        switch (action) {
+//            case MotionEvent.ACTION_DOWN:
+//                nPosX = (int) event.getX(0);
+//                nPosY = (int) event.getY(0);
+//                nPosX2 = (int) event.getX(1);
+//                nPosY2 = (int) event.getY(1);
+//                break;
+//            case MotionEvent.ACTION_MOVE:
+//                break;
+//            case MotionEvent.ACTION_UP:
+//                nPosX3 = (int) event.getX(0);
+//                nPosY3 = (int) event.getY(0);
+//                nPosX4 = (int) event.getX(1);
+//                nPosY4 = (int) event.getY(1);
+//                break;
+//        }
+//
+//        invalidate();
+//        return super.onTouchEvent(event);
+//    }
 
     @Override
     protected void onDraw(Canvas canvas) {

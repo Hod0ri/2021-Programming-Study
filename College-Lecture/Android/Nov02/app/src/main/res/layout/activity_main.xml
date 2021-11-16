@@ -14,5 +14,12 @@
         android:backgroundTint="#E38484"
         android:text="Draw Activity" />
 
+    <Button
+        android:id="@+id/btn_IntentTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4A81B1"
+        android:text="IntentTest Activity" />
+
 
 </LinearLayout>

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_draw;
+    private Button btn_draw, btn_IntentTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn_draw = findViewById(R.id.btn_draw);
+        btn_IntentTest = findViewById(R.id.btn_IntentTest);
 
         // Move to Draw Activity
         btn_draw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DrawActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Move to Intent Test Activity
+        btn_IntentTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), IntentTestActivity.class);
                 startActivity(intent);
             }
         });

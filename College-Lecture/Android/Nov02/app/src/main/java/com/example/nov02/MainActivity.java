@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_draw, btn_IntentTest;
+    private Button btn_draw, btn_IntentTest, btn_file;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_draw = findViewById(R.id.btn_draw);
         btn_IntentTest = findViewById(R.id.btn_IntentTest);
+        btn_file = findViewById(R.id.btn_file);
 
         // Move to Draw Activity
         btn_draw.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), IntentTestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Move to File I/O Test Activity
+        btn_file.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FileIOActivity.class);
                 startActivity(intent);
             }
         });

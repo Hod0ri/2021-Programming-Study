@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nov02">
         <activity
+            android:name=".FileIOActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReceiveTestActivity"
             android:exported="false" />
         <activity

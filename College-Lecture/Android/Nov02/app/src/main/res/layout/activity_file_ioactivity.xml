@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FileIOActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:text="Write"
+        android:background="#DD8282"
+        />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input ID"
+        />
+    <EditText
+        android:id="@+id/edt_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btn_acSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#53A1A3"
+        />
+
+    <TextView
+        android:id="@+id/lb_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/lb_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:backgroundTint="#ED6897"
+        />
+</LinearLayout>

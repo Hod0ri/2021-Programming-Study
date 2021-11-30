@@ -5,37 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".HiWidgetActivity">
 
     <Button
-        android:id="@+id/btn_draw"
+        android:id="@+id/btn_testTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#E38484"
-        android:text="Draw Activity" />
+        android:text="Time Widget"
+        android:onClick="onTimeClick"
+        />
 
     <Button
-        android:id="@+id/btn_IntentTest"
+        android:id="@+id/btn_ScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4A81B1"
-        android:text="IntentTest Activity" />
+        android:backgroundTint="#D250E8"
+        android:text="Scroll View Widget"
+        android:onClick="onScrollClick"
+        />
 
     <Button
-        android:id="@+id/btn_file"
+        android:id="@+id/btn_slide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#57B86F"
-        android:text="FileTest Activity" />
+        android:backgroundTint="#D250E8"
+        android:text="Slide Widget"
+        android:onClick="onSlideClick"
+        />
 
     <Button
-        android:id="@+id/btn_StudyWidget"
+        android:id="@+id/btn_flip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#A685AC"
-        android:text="Widget Activity" />
-
-
-
+        android:backgroundTint="#D250E8"
+        android:text="Flip Widget"
+        android:onClick="onFlipClick"
+        />
 
 </LinearLayout>

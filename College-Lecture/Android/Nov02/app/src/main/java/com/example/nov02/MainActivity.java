@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_draw, btn_IntentTest, btn_file;
+    private Button btn_draw, btn_IntentTest, btn_file, btn_StudyWidget;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btn_draw = findViewById(R.id.btn_draw);
         btn_IntentTest = findViewById(R.id.btn_IntentTest);
         btn_file = findViewById(R.id.btn_file);
+        btn_StudyWidget = findViewById(R.id.btn_StudyWidget);
 
         // Move to Draw Activity
         btn_draw.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), FileIOActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_StudyWidget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HiWidgetActivity.class);
                 startActivity(intent);
             }
         });

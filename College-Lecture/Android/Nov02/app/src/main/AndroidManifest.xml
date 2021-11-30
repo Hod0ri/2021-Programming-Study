@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nov02">
         <activity
+            android:name=".FlipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SlideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HiWidgetActivity"
+            android:exported="false" />
+        <activity
             android:name=".FileIOActivity"
             android:exported="false" />
         <activity
